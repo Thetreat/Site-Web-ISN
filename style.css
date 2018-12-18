@@ -1,0 +1,29 @@
+a{
+  text-decoration: none;
+  color:black;
+}
+li a{
+  display: block;
+  color: #EDF8FF;
+  background-color: #5D737E;
+  padding: 14px;
+}
+li a:hover{
+  background-color: #C0FDFB;
+  color: #5D737E;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+ul li{
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex: 1;
+  list-style: none;
+  width: auto;
+}
+nav{
+  width:100%;
+}
