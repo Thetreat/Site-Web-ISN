@@ -4,26 +4,26 @@ a{
 }
 li a{
   display: block;
-  color: #EDF8FF;
-  background-color: #5D737E;
-  padding: 14px;
+  color: white;
 }
-li a:hover{
-  background-color: #C0FDFB;
+li:hover{
+  background-color: #64B6AC;
   color: #5D737E;
 }
 ul{
   padding: 0;
   margin: 0;
+  background-color: #5D737E;
+  overflow: hidden;
 }
-ul li{
-  display: flex;
+li{
+  display: inline;
   text-align: center;
-  flex-direction: row;
-  flex: 1;
   list-style: none;
   width: auto;
+  float: left;
+  padding: 14px 16px;
 }
-nav{
-  width:100%;
+#Apropos{
+  float: right;
 }
