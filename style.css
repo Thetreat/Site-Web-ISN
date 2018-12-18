@@ -1,3 +1,7 @@
+*{
+  font-family: "Open Sans";
+  margin: 0;
+}
 a{
   text-decoration: none;
   color:black;
@@ -7,14 +11,14 @@ li a{
   color: white;
 }
 li:hover{
-  background-color: #64B6AC;
+  background-color: #43535b;
   color: #5D737E;
 }
 ul{
   padding: 0;
   margin: 0;
-  background-color: #5D737E;
   overflow: hidden;
+  background-color: #5D737E;
 }
 li{
   display: inline;
@@ -23,7 +27,21 @@ li{
   width: auto;
   float: left;
   padding: 14px 16px;
+  background-color: #5D737E;
+
 }
-#Apropos{
-  float: right;
+header h1{
+  text-align: center;
+  padding: 20px 20px;
+  font-weight: normal;
+}
+header{
+  background-color: #64B6AC;
+  color: white;
+}
+.active{
+  background-color: #64B6AC;
+}
+.active:hover{
+  background-color: #64B6AC;
 }
