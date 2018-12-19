@@ -10,17 +10,17 @@ li a{
   display: block;
   color: white;
 }
-li:hover{
+li:hover, #navigation li:hover{
   background-color: #43535b;
   color: #5D737E;
 }
-ul{
+ul,ol{
   padding: 0;
   margin: 0;
   overflow: hidden;
   background-color: #5D737E;
 }
-li{
+#navigation li{
   display: inline;
   text-align: center;
   list-style: none;
@@ -28,8 +28,31 @@ li{
   float: left;
   padding: 14px 16px;
   background-color: #5D737E;
-
 }
+
+.sommaire{
+  width: 15%;
+  margin-left:15%;
+  background-color: rgba(0,0,0,0);
+  position: sticky;
+  top: 40px;
+}
+.sommaire li a{
+  color: black;
+  display: inline;
+}
+.sommaire li:hover{
+  background-color: rgba(0, 0, 0, 0);
+}
+.sommaire li a:hover{
+  color: #64B6AC;
+ }
+.corps{
+  margin-top: -45px;
+  margin-right: 20%;
+  margin-left: 30%;
+}
+
 header h1{
   text-align: center;
   padding: 20px 20px;
@@ -39,9 +62,18 @@ header{
   background-color: #64B6AC;
   color: white;
 }
-.active{
+footer{
+  background-color: #64B6AC;
+  height: 100px;
+  margin-top: 50px;
+}
+#codejpg{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.active, #navigation .active{
   background-color: #64B6AC;
 }
-.active:hover{
+.active:hover, #navigation .active:hover{
   background-color: #64B6AC;
 }
