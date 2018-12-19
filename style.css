@@ -6,6 +6,7 @@ a{
   text-decoration: none;
   color:black;
 }
+
 li a{
   display: block;
   color: white;
@@ -48,14 +49,15 @@ ul,ol{
   color: #64B6AC;
  }
 .corps{
-  margin-top: -90px;
+  margin-top: -150px;
   margin-right: 20%;
   margin-left: 30%;
+  text-align: justify;
 }
 
 header h1{
   text-align: center;
-  padding: 20px 20px;
+  padding: 10px 20px;
   font-weight: normal;
 }
 header{
