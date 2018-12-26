@@ -6,14 +6,17 @@ a{
   text-decoration: none;
   color:black;
 }
+p a{
+  text-decoration: underline;
+  text-decoration-color: #1F618D;
+}
+p a:hover{
+  color: #1F618D;
+}
 
 li a{
   display: block;
   color: white;
-}
-li:hover, #navigation li:hover{
-  background-color: #43535b;
-  color: #5D737E;
 }
 ul,ol{
   padding: 0;
@@ -21,22 +24,29 @@ ul,ol{
   overflow: hidden;
   background-color: #5D737E;
 }
-#navigation li{
+.navigation{
+  background-color: #34495E;
+}
+.navigation li{
   display: inline;
   text-align: center;
   list-style: none;
-  width: auto;
   float: left;
   padding: 14px 16px;
-  background-color: #5D737E;
+  background-color: #34495E;
+}
+.navigation li:hover{
+  background-color: #1F618D;
+  color: white;
 }
 
 .sommaire{
   width: 15%;
-  margin-left:15%;
+  margin-left:10%;
   background-color: rgba(0,0,0,0);
   position: sticky;
   top: 40px;
+  float: left;
 }
 .sommaire li a{
   color: black;
@@ -46,13 +56,19 @@ ul,ol{
   background-color: rgba(0, 0, 0, 0);
 }
 .sommaire li a:hover{
-  color: #64B6AC;
+  color: #1F618D;
+ }
+ .numbered{
+   list-style-position: inside;
  }
 .corps{
-  margin-top: -150px;
   margin-right: 20%;
   margin-left: 30%;
   text-align: justify;
+}
+embed[type="application/pdf"]{
+  width: 700px;
+  height: 800px;
 }
 
 header h1{
@@ -61,21 +77,28 @@ header h1{
   font-weight: normal;
 }
 header{
-  background-color: #64B6AC;
+  background-color: #1F618D;
   color: white;
+  margin-bottom: 30px;
 }
 footer{
-  background-color: #64B6AC;
+  background-color: #1F618D;
   height: 100px;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
-#codejpg{
+.banner{
   width: 100%;
   margin-bottom: 40px;
+  margin-top: -30px;
 }
-.active, #navigation .active{
-  background-color: #64B6AC;
+.active, .navigation .active{
+  background-color: #1F618D;
 }
-.active:hover, #navigation .active:hover{
-  background-color: #64B6AC;
+.active:hover, .navigation .active:hover{
+  background-color: #1F618D;
 }
