@@ -1,33 +1,40 @@
-*{
+* {
   font-family: "Open Sans";
   margin: 0;
 }
-a{
+
+a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
-p a{
+
+p a {
   text-decoration: underline;
   text-decoration-color: #1F618D;
 }
-p a:hover{
+
+p a:hover {
   color: #1F618D;
 }
 
-li a{
+li a {
   display: block;
   color: white;
 }
-ul,ol{
+
+ul,
+ol {
   padding: 0;
   margin: 0;
   overflow: hidden;
   background-color: #5D737E;
 }
-.navigation{
+
+.navigation {
   background-color: #34495E;
 }
-.navigation li{
+
+.navigation li {
   display: inline;
   text-align: center;
   list-style: none;
@@ -35,53 +42,62 @@ ul,ol{
   padding: 14px 16px;
   background-color: #34495E;
 }
-.navigation li:hover{
+
+.navigation li:hover {
   background-color: #1F618D;
   color: white;
 }
 
-.sommaire{
+.sommaire {
   width: 15%;
-  margin-left:10%;
-  background-color: rgba(0,0,0,0);
+  margin-left: 10%;
+  background-color: rgba(0, 0, 0, 0);
   position: sticky;
   top: 40px;
   float: left;
 }
-.sommaire li a{
+
+.sommaire li a {
   color: black;
   display: inline;
 }
-.sommaire li:hover{
+
+.sommaire li:hover {
   background-color: rgba(0, 0, 0, 0);
 }
-.sommaire li a:hover{
+
+.sommaire li a:hover {
   color: #1F618D;
- }
- .numbered{
-   list-style-position: inside;
- }
-.corps{
+}
+
+.numbered {
+  list-style-position: inside;
+}
+
+.corps {
   margin-right: 20%;
   margin-left: 30%;
   text-align: justify;
 }
-embed[type="application/pdf"]{
+
+embed[type="application/pdf"] {
   width: 700px;
   height: 800px;
 }
 
-header h1{
+header h1 {
   text-align: center;
   padding: 10px 20px;
   font-weight: normal;
 }
-header{
+
+header {
   background-color: #1F618D;
   color: white;
   margin-bottom: 30px;
 }
-footer{
+
+footer {
   background-color: #1F618D;
   height: 100px;
   margin-top: 50px;
@@ -91,14 +107,18 @@ footer{
   text-align: center;
   color: white;
 }
-.banner{
+
+.banner {
   width: 100%;
   margin-bottom: 40px;
   margin-top: -30px;
 }
-.active, .navigation .active{
+
+.navigation .active {
   background-color: #1F618D;
 }
-.active:hover, .navigation .active:hover{
+
+.active:hover,
+.navigation .active:hover {
   background-color: #1F618D;
 }
