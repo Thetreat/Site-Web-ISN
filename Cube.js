@@ -15,7 +15,7 @@ function setup() {
 function draw() {
   background(200);
   mouseDragged();
-  box(300, 300, 300, 9);
+  box(300);
 }
 
 function mouseDragged() {

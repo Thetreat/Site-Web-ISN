@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+p {
+  text-align: justify;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -78,6 +82,15 @@ ol {
   margin-right: 20%;
   margin-left: 30%;
   text-align: justify;
+  width: 40%;
+}
+
+.corps h1 {
+  text-decoration: underline;
+}
+
+.corps h2 {
+  font-weight: normal;
 }
 
 embed[type="application/pdf"] {
@@ -106,6 +119,10 @@ footer {
   justify-content: center;
   text-align: center;
   color: white;
+}
+
+footer p {
+  text-align: center;
 }
 
 .banner {
