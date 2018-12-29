@@ -9,11 +9,10 @@ var x1 = -150,
 function setup() {
   var canvas = createCanvas(601, 601, WEBGL);
   canvas.parent('sketch-holder');
-  background(255, 0, 100);
 }
 
 function draw() {
-  background(200);
+  background(51);
   mouseDragged();
   box(300);
 }
