@@ -14,11 +14,11 @@ a {
 
 p a {
   text-decoration: underline;
-  text-decoration-color: #1F618D;
+  text-decoration-color: #1f618d;
 }
 
 p a:hover {
-  color: #1F618D;
+  color: #1f618d;
 }
 
 li a {
@@ -31,11 +31,11 @@ ol {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background-color: #5D737E;
+  background-color: #5d737e;
 }
 
 .navigation {
-  background-color: #34495E;
+  background-color: #34495e;
 }
 
 .navigation li {
@@ -44,11 +44,11 @@ ol {
   list-style: none;
   float: left;
   padding: 14px 16px;
-  background-color: #34495E;
+  background-color: #34495e;
 }
 
 .navigation li:hover {
-  background-color: #1F618D;
+  background-color: #1f618d;
   color: white;
 }
 
@@ -71,7 +71,7 @@ ol {
 }
 
 .sommaire li a:hover {
-  color: #1F618D;
+  color: #1f618d;
 }
 
 .numbered {
@@ -92,7 +92,9 @@ ol {
 .corps h2 {
   font-weight: normal;
 }
-
+#Cube {
+  text-align: center;
+}
 embed[type="application/pdf"] {
   width: 700px;
   height: 800px;
@@ -105,13 +107,13 @@ header h1 {
 }
 
 header {
-  background-color: #1F618D;
+  background-color: #1f618d;
   color: white;
   margin-bottom: 30px;
 }
 
 footer {
-  background-color: #1F618D;
+  background-color: #1f618d;
   height: 100px;
   margin-top: 50px;
   display: flex;
@@ -132,10 +134,10 @@ footer p {
 }
 
 .navigation .active {
-  background-color: #1F618D;
+  background-color: #1f618d;
 }
 
 .active:hover,
 .navigation .active:hover {
-  background-color: #1F618D;
+  background-color: #1f618d;
 }

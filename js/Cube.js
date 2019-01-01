@@ -7,14 +7,14 @@ var x1 = -150,
   z2 = 10;
 
 function setup() {
-  var canvas = createCanvas(601, 601, WEBGL);
-  canvas.parent('sketch-holder');
+  var canvas = createCanvas(401, 401, WEBGL);
+  canvas.parent("Cube");
 }
 
 function draw() {
   background(51);
   mouseDragged();
-  box(300);
+  box(150);
 }
 
 function mouseDragged() {
