@@ -1,14 +1,14 @@
-let flock = [],
-  boundary,
-  perceptionRadius = 100,
-  trail = 0.45,
-  flockSize = 100,
-  cap = flockSize / 50,
-  sTotal;
+let flock = [];
+let boundary;
+let perceptionRadius = 100;
+let trail = 0.45;
+let flockSize = 100;
+let cap = flockSize / 50;
+let sTotal;
 
 function setup() {
   colorMode(HSB, 360, 100, 100, 1);
-  createCanvas(innerWidth, 350).parent("Flock");
+  createCanvas(600, 400).parent("Flock");
 
   cols = floor(width / 5);
   rows = floor(height / 5);

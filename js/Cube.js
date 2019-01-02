@@ -1,5 +1,6 @@
-var pointA, pointB;
-var x1 = -150,
+let pointA,
+  pointB,
+  x1 = -150,
   y1 = -150,
   z1 = 10,
   x2 = 200,

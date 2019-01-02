@@ -84,7 +84,9 @@ ol {
   text-align: justify;
   width: 40%;
 }
-
+.container {
+  margin-top: 30px;
+}
 .corps h1 {
   text-decoration: underline;
 }
@@ -95,11 +97,14 @@ ol {
 #Cube {
   text-align: center;
 }
-embed[type="application/pdf"] {
+embed[type="application/pdf"],
+#embedpdf {
   width: 700px;
   height: 800px;
 }
-
+header img {
+  display: inline;
+}
 header h1 {
   text-align: center;
   padding: 10px 20px;
@@ -109,13 +114,12 @@ header h1 {
 header {
   background-color: #1f618d;
   color: white;
-  margin-bottom: 30px;
 }
 
 footer {
   background-color: #1f618d;
   height: 100px;
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
