@@ -1,0 +1,34 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+
+    <div id="mouseArea" onmouseover="showInterface()" onmouseout="hideInterface()">
+      <p id="menu">MENU</p>
+      <div id="interface">
+        <input type="range" min="0" max="5" step="0.1" class="slider" value="1" id="align">
+        <input type="range" min="0" max="5" step="0.1" class="slider" value="1" id="cohesion">
+        <input type="range" min="0" max="5" step="0.1" class="slider" value="1" id="separation">
+        <button onclick="seaDefault()">sea</button>
+        <button onclick="disco()">disco</button>
+        <button onclick="snow()">snow</button>
+        <button onclick="birds()">birds</button>
+        <button onclick="leaves()">leaves</button>
+        <button onclick="grain()">grain</button>
+        <button onclick="starryNight()">stars</button>
+        <button onclick="search()">search</button>
+        <input type="number" step="1" name="size" id="size" placeholder="size">
+      </div>
+    </div>
+    <script src="quadtree.js"></script>
+    <script src="boid.js"></script>
+    <script src="flocks.js"></script>
+    <script src="sketch.js"></script>
+  
+
+</body></html>

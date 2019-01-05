@@ -29,7 +29,11 @@
       <div class="corps">
         <div id="embedpdf"></div>
         <script>
-          PDFObject.embed("livreprof.pdf", "#embedpdf");
+          PDFObject.embed("livreprof.pdf", "#embedpdf", {
+            view: "FitV",
+            pagemode: "thumbs",
+            search: "Démontrez"
+          });
         </script>
       </div>
     </div>

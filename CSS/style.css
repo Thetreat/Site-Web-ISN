@@ -131,12 +131,6 @@ footer p {
   text-align: center;
 }
 
-.banner {
-  width: 100%;
-  margin-bottom: 40px;
-  margin-top: -30px;
-}
-
 .navigation .active {
   background-color: #1f618d;
 }
