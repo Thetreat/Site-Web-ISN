@@ -1,44 +1,78 @@
-let flock = [];
-let boundary;
-let perceptionRadius = 100;
-let trail = 0.45;
-let flockSize = 100;
-let cap = flockSize / 50;
-let sTotal;
+var cube = function(cube) {
+  let pointA,
+    pointB,
+    x1 = -150,
+    y1 = -150,
+    z1 = 10,
+    x2 = 200,
+    y2 = 200,
+    z2 = 10;
 
-function setup() {
-  colorMode(HSB, 360, 100, 100, 1);
-  createCanvas(600, 400).parent("Flock");
+  cube.setup = function() {
+    cube.createCanvas(401, 401, "webgl").parent("Cube");
+  };
 
-  cols = floor(width / 5);
-  rows = floor(height / 5);
+  cube.draw = function() {
+    cube.background(51);
+    cube.mouseDragged();
+    cube.box(150);
+  };
 
-  boundary = new Rectangle(width / 2, height / 2, width, height);
-  for (var i = 0; i < flockSize; i++) {
-    flock.push(new Boid());
-  }
-}
+  cube.mouseDragged = function() {
+    cube.rotateX(cube.radians(-cube.mouseY) * 0.5);
+    cube.rotateY(cube.radians(-cube.mouseX) * 0.5);
+  };
+};
+var Cube = new p5(cube);
 
-function draw() {
-  let qtree = new QuadTree(boundary, cap);
-  for (let boid of flock) {
-    let p = new Point(boid.position.x, boid.position.y, boid);
-    qtree.insert(p);
-  }
+var foule = function(flock) {
+  let flocks = [],
+    boundary,
+    perceptionRadius = 100,
+    trail = 0.45,
+    flockSize = 100,
+    cap = flockSize / 50;
 
-  background(249, 30, 10, trail);
+  flock.setup = function() {
+    colorMode("hsb", 360, 100, 100, 1);
+    createCanvas(600, 400).parent("Flock");
+    document.getElementById("defaultCanvas2").remove();
 
-  let a = 1,
-    c = 1,
-    s = 1;
+    cols = flock.floor(flock.width / 5);
+    rows = flock.floor(flock.height / 5);
 
-  for (let boid of flock) {
-    let range = new Circle(boid.position.x, boid.position.y, perceptionRadius);
-    let localBoids = qtree.query(range);
+    boundary = new Rectangle(width / 2, height / 2, width, height);
+    for (var i = 0; i < flockSize; i++) {
+      flocks.push(new Boid());
+    }
+  };
 
-    boid.flock(localBoids, a, c, s);
-    boid.edges();
-    boid.update();
-    boid.show();
-  }
-}
+  flock.draw = function() {
+    let qtree = new QuadTree(boundary, cap);
+    for (let boid of flocks) {
+      let p = new Point(boid.position.x, boid.position.y, boid);
+      qtree.insert(p);
+    }
+
+    background(249, 30, 10, trail);
+
+    let a = 1,
+      c = 1,
+      s = 1;
+
+    for (let boid of flocks) {
+      let range = new Circle(
+        boid.position.x,
+        boid.position.y,
+        perceptionRadius
+      );
+      let localBoids = qtree.query(range);
+
+      boid.flock(localBoids, a, c, s);
+      boid.edges();
+      boid.update();
+      boid.show();
+    }
+  };
+};
+var Flock = new p5(foule);
