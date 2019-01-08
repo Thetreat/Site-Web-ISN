@@ -8,7 +8,7 @@ let flock = [],
 
 function setup() {
   colorMode(HSB, 360, 100, 100, 1);
-  createCanvas(innerWidth, 350).parent("Flock");
+  createCanvas(windowWidth - 17, 350).parent("Flock");
 
   cols = floor(width / 5);
   rows = floor(height / 5);

@@ -97,8 +97,10 @@ ol {
 #Cube {
   text-align: center;
 }
-embed[type="application/pdf"],
-#embedpdf {
+.corps canvas {
+  border-radius: 30px;
+}
+embed[type="application/pdf"] {
   width: 700px;
   height: 800px;
 }
