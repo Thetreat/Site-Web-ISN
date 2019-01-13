@@ -1,6 +1,8 @@
 var cube = function(cube) {
   let pointA,
     pointB,
+    img,
+    imgloaded,
     x1 = -150,
     y1 = -150,
     z1 = 10,
@@ -9,6 +11,7 @@ var cube = function(cube) {
     z2 = 10;
 
   cube.setup = function() {
+    img = loadImage("../src/HarryPotter.png");
     cube.createCanvas(401, 401, "webgl").parent("Cube");
   };
 
@@ -17,7 +20,15 @@ var cube = function(cube) {
     cube.mouseDragged();
     cube.box(150);
   };
-
+  cube.mouseClicked = function() {
+    if (imgloaded) {
+      cube.texture(img);
+      imgloaded = false;
+    } else {
+      cube.texture(rgb(0, 0, 0));
+      imgloaded = true;
+    }
+  };
   cube.mouseDragged = function() {
     cube.rotateX(cube.radians(-cube.mouseY) * 0.5);
     cube.rotateY(cube.radians(-cube.mouseX) * 0.5);

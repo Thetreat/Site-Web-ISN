@@ -43,10 +43,11 @@ ol {
   text-align: center;
   list-style: none;
   float: left;
-  padding: 14px 16px;
   background-color: #34495e;
 }
-
+.navigation li a {
+  padding: 14px 16px;
+}
 .navigation li:hover {
   background-color: #1f618d;
   color: white;
@@ -59,8 +60,16 @@ ol {
   position: sticky;
   top: 40px;
   float: left;
+  counter-reset: compteChap;
 }
-
+.sommaire li:not(.theme):not(.anchor):before {
+  counter-increment: compteChap;
+  content: counter(compteChap) ". ";
+}
+.theme {
+  counter-reset: compteChap 0;
+  text-decoration: underline;
+}
 .sommaire li a {
   color: black;
   display: inline;
@@ -73,11 +82,6 @@ ol {
 .sommaire li a:hover {
   color: #1f618d;
 }
-
-.numbered {
-  list-style-position: inside;
-}
-
 .corps {
   margin-right: 20%;
   margin-left: 30%;

@@ -9,8 +9,10 @@
       type="text/css"
       href="http://fonts.googleapis.com/css?family=Open+Sans"
     />
+    <link rel="icon" href="../src/NDC.png" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
   </head>
+  <script src="../js/tabs.js"></script>
   <body>
     <header>
       <h1>Notre Dame De La Compassion</h1>
@@ -23,7 +25,136 @@
         </ul>
       </nav>
     </header>
-    <div class="container"><div class="corps"></div></div>
+    <div class="container">
+      <ol class="sommaire numbered">
+        <li class="theme">Analyse</li>
+        <li><a onclick="openChapter('Chapitre1');">Les suites</a></li>
+        <li>
+          <a onclick="openChapter('Chapitre2');">Limites et continuité</a>
+        </li>
+        <li><a onclick="openChapter('Chapitre3');">La dérivation</a></li>
+        <li>
+          <a onclick="openChapter('Chapitre4');">Fonctions trigonométriques</a>
+        </li>
+        <li>
+          <a onclick="openChapter('Chapitre5');">Fonction exponentielle</a>
+        </li>
+        <li><a onclick="openChapter('Chapitre6');">Fonctions logarithme</a></li>
+        <li><a onclick="openChapter('Chapitre7');">Intégration</a></li>
+        <br />
+        <li class="theme">Géométrie</li>
+        <li><a onclick="openChapter('Chapitre8');">Nombres Complexes</a></li>
+        <li>
+          <a onclick="openChapter('Chapitre9');"
+            >Droites et plans de l'espace</a
+          >
+        </li>
+        <li><a onclick="openChapter('Chapitre10');">Vecteurs de l'espace</a></li>
+        <li><a onclick="openChapter('Chapitre11');">Produit scalaire dans l'espace</a></li>
+        <br />
+        <li class="theme">Probabilités et Statistiques</li>
+        <li>
+          <a onclick="openChapter('Chapitre12');">Conditionnement et indépendance</a>
+        </li>
+        <li><a onclick="openChapter('Chapitre13');">Lois de probabilité à densité</a></li>
+        <li><a onclick="openChapter('Chapitre14');">Fluctuation et estimation</a></li>
+        <br />
+        <li class="anchor"><a href="#">Haut de la page</a></li>
+        <li class="anchor"><a href="#end">Bas de la page</a></li>
+      </ol>
+      <div class="corps">
+        <h1>Cours d'enseignement spécifique Maths Terminales S</h1>
+        <p>
+          Tous les cours présentés sont issus de
+          <a
+            href="https://www.maths-et-tiques.fr/index.php/cours-maths/niveau-tale-s"
+            >Maths-et-tiques.fr</a
+          >
+        </p>
+        <br />
+
+        <div id="Chapitre1" class="Chapitre">
+          <h2>Analyse : Les suites</h2>
+          <br />
+          <embed src="../src/Maths/SuitesTS1.pdf" type="application/pdf" />
+          <embed src="../src/Maths/SuitesTS2.pdf" type="application/pdf" />
+        </div>
+        <div id="Chapitre2" class="Chapitre" style="display:none">
+          <h2>Analyse : Limites et continuité</h2>
+          <br />
+          <embed src="../src/Maths/LimitesContTS1.pdf" type="application/pdf" />
+          <embed src="../src/Maths/LimitesContTS2.pdf" type="application/pdf" />
+        </div>
+        <div id="Chapitre3" class="Chapitre" style="display:none">
+          <h2>Analyse : La dérivation</h2>
+          <br />
+          <embed src="../src/Maths/DerivTS.pdf" type="application/pdf" />
+        </div>
+        <div id="Chapitre4" class="Chapitre" style="display:none">
+          <h2>Analyse : Fonctions Trigonométriques</h2>
+          <br />
+          <embed src="../src/Maths/TrigoTS.pdf" type="application/pdf" />
+        </div>
+        <div id="Chapitre5" class="Chapitre" style="display:none">
+          <h2>Analyse : Fonction exponentielle</h2>
+          <br />
+          <embed src="../src/Maths/ExpoTS.pdf" type="application/pdf" />
+        </div>
+        <div id="Chapitre6" class="Chapitre" style="display:none">
+          <h2>Analyse : Fonction logarithme</h2>
+          <br />
+          <embed src="../src/Maths/LogTS.pdf" type="application/pdf" />
+        </div>
+        <div id="Chapitre7" class="Chapitre" style="display:none">
+          <h2>Analyse : Intégration</h2>
+          <br />
+          <embed src="../src/Maths/IntegTS1.pdf" type="application/pdf" />
+          <embed src="../src/Maths/IntegTS2.pdf" type="application/pdf" />
+        </div>
+
+        <div id="Chapitre8" class="Chapitre" style="display:none">
+          <h2>Géométrie : Nombres Complexes</h2>
+          <br />
+          <embed src="../src/Maths/NombrecTS1.pdf" type="application/pdf" />
+          <embed src="../src/Maths/NombrecTS2.pdf" type="application/pdf" />
+          <embed src="../src/Maths/NombrecTS3.pdf" type="application/pdf" />
+        </div>
+        <div id="Chapitre9" class="Chapitre" style="display:none">
+          <h2>Géométrie : Droites et plans de l'espace</h2>
+          <br />
+          <embed src="../src/Maths/EspaceTS1.pdf" type="application/pdf" />
+        </div>
+        <div id="Chapitre10" class="Chapitre" style="display:none">
+          <h2>Géométrie : Vecteurs de l'espace</h2>
+          <br />
+          <embed src="../src/Maths/EspaceTS2.pdf" type="application/pdf" />
+        </div>
+        <div id="Chapitre11" class="Chapitre" style="display:none">
+          <h2>Géométrie : Produit scalaire dans l'espace</h2>
+          <br />
+          <embed src="../src/Maths/EspaceTS3.pdf" type="application/pdf" />
+        </div>
+
+        <div id="Chapitre12" class="Chapitre" style="display:none">
+          <h2>
+            Probabilités et Statistiques : Conditionnement et indépendance
+          </h2>
+          <br />
+          <embed src="../src/Maths/CondTS.pdf" type="application/pdf" />
+        </div>
+        <div id="Chapitre13" class="Chapitre" style="display:none">
+          <h2>Probabilités et Statistiques : Lois de probabilité à densité</h2>
+          <br />
+          <embed src="../src/Maths/LoisTS1.pdf" type="application/pdf" />
+          <embed src="../src/Maths/LoisTS2.pdf" type="application/pdf" />
+        </div>
+        <div id="Chapitre14" class="Chapitre" style="display:none">
+          <h2>Probabilités et Statistiques : Fluctuation et estimation</h2>
+          <br />
+          <embed src="../src/Maths/EstimTS.pdf" type="application/pdf" />
+        </div>
+      </div>
+    </div>
     <footer>
       <p>Site conçu et créé par Romain Pignol et Maxime Zamani TS2</p>
     </footer>
