@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Architext";
+  font-style: "Regular";
+  src: url("../src/Architex.ttf");
+}
 * {
   font-family: "Open Sans";
   margin: 0;
@@ -67,7 +72,7 @@ ol {
   content: counter(compteChap) ". ";
 }
 .theme {
-  counter-reset: compteChap 0;
+  counter-reset: compteChap;
   text-decoration: underline;
 }
 .sommaire li a {
@@ -83,10 +88,10 @@ ol {
   color: #1f618d;
 }
 .corps {
-  margin-right: 20%;
+  margin-right: 15%;
   margin-left: 30%;
   text-align: justify;
-  width: 40%;
+  width: 45%;
 }
 .container {
   margin-top: 30px;
@@ -97,6 +102,44 @@ ol {
 
 .corps h2 {
   font-weight: normal;
+}
+
+.post-it {
+  width: 300px;
+  height: 300px;
+  background-color: #ebe378;
+  border-bottom-right-radius: 60px 10px;
+  box-shadow: 5px 5px 2px grey;
+  transition: 0.2s;
+}
+.post-it:hover {
+  transform: scale(1.25);
+}
+.post-it p {
+  height: calc(100% - 50px);
+  padding: 20px;
+  overflow-y: scroll;
+  font-family: "Architext";
+  font-size: 30px;
+}
+.post-it p::-webkit-scrollbar {
+  width: 5px;
+}
+.post-it p::-webkit-scrollbar-track {
+  background: #ebe378;
+}
+.post-it p::-webkit-scrollbar-thumb {
+  background: #5d737e;
+  border-radius: 2.5px;
+}
+.post-it p::-webkit-scrollbar-thumb:hover {
+  background: #3e8dc2;
+  border-radius: 2.5px;
+}
+.liege {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 #Cube {
   text-align: center;
