@@ -121,6 +121,7 @@ ol {
   overflow-y: scroll;
   font-family: "Architext";
   font-size: 30px;
+  text-align: center;
 }
 .post-it p::-webkit-scrollbar {
   width: 5px;
@@ -140,6 +141,7 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 #Cube {
   text-align: center;
